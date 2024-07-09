@@ -2,8 +2,10 @@
 #include <functional>
 #include <iostream>
 
-std::function<int(int)> compose(std::function<int(int)> f, std::function<int(int)> g) {
-  std::function<int(int)> result = [f, g](int x)->int {
+using namespace std;
+
+function<int(int)> compose(function<int(int)> f, function<int(int)> g) {
+  function<int(int)> result = [f, g](int x)->int {
     return f(g(x));
   };
   return result;
@@ -17,5 +19,5 @@ int main() {
   auto result = compose(square, compose(add_five, triple));
 
   int example = result(2);  // Expected: 121
-  std::cout << example << std::endl;
+  cout << example << endl;
 }
