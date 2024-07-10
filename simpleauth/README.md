@@ -1,0 +1,1 @@
+Start the server with `npm start`. Credentials are in `constants.ts`. :)
