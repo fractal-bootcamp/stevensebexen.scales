@@ -1,4 +1,4 @@
-import fs from 'fs';
+import fs from 'node:fs';
 import type { AppState, Book } from './types';
 import { getFirstBook, getLastBook, pushBook, popFirstBook, findBookByTitle, filterBooksByGenre, hasBookByAuthor, getAllTitles, getModernBooks, getEarliestPublicationYear, sortBooksByYear, reverseBooks, getAllGenres, getAllAuthorsAndTitles, areAllBooksFiction, doAllBooksHaveTitles, getGenreCounts, getBookProperties, getBookValues, getBookEntries, cloneBook, changeYearOfBook, getFirstTwoBooks, getBookInfo, getBookInfoAndRest, getPrimaryGenre } from './functions';
 
