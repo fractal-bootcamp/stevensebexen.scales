@@ -6,15 +6,15 @@ const indexHtml = fs.readFileSync('index.html');
 const loginFailedHtml = fs.readFileSync('loginFailed.html');
 const secretHtml = fs.readFileSync('secret.html');
 
-export function indexHandler(req: Request, res: Response): void {
-  res.writeHead(200, {'Content-Type': 'text/html'}).end(indexHtml);
+export function indexHandler(request: Request, response: Response): void {
+  response.writeHead(200, {'Content-Type': 'text/html'}).end(indexHtml);
 }
 
-export function secretHandler(req: Request, res: Response): void {
-  res.writeHead(200, {'Content-Type': 'text/html'}).end(secretHtml);
+export function secretHandler(request: Request, response: Response): void {
+  response.writeHead(200, {'Content-Type': 'text/html'}).end(secretHtml);
 }
 
-interface Credentials {
+type Credentials = {
   user: string;
   password: string;
 }
