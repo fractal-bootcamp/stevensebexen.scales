@@ -21,7 +21,7 @@ export function findBookByTitle(state: AppState, title: string): Book | undefine
 }
 
 export function filterBooksByGenre(state: AppState, genre: string): AppState {
-  return {...state, books: state.books.filter(book => book.genres.map(genre => genre.toLowerCase()).includes(genre.toLowerCase()))};
+  return {...state, books: state.books.filter(book => book.genres.map(g => g.toLowerCase()).includes(genre.toLowerCase()))};
 }
 
 export function hasBookByAuthor(state: AppState, author: string): boolean {
