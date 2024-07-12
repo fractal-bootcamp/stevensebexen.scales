@@ -1,0 +1,554 @@
+--- Basic Array Operations ---
+
+First book:
+{
+  "id": 1,
+  "title": "To Kill a Mockingbird",
+  "author": "Harper Lee",
+  "year": 1960,
+  "genres": [
+    "Fiction",
+    "Drama"
+  ]
+}
+
+Last book:
+{
+  "id": 5,
+  "title": "To the Lighthouse",
+  "author": "Virginia Woolf",
+  "year": 1927,
+  "genres": [
+    "Fiction",
+    "Modernist"
+  ]
+}
+
+Books after adding:
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "year": 1960,
+      "genres": [
+        "Fiction",
+        "Drama"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "1984",
+      "author": "George Orwell",
+      "year": 1949,
+      "genres": [
+        "Fiction",
+        "Dystopian"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "year": 1813,
+      "genres": [
+        "Fiction",
+        "Romance"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "year": 1937,
+      "genres": [
+        "Fiction",
+        "Fantasy"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "To the Lighthouse",
+      "author": "Virginia Woolf",
+      "year": 1927,
+      "genres": [
+        "Fiction",
+        "Modernist"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "year": 1965,
+      "genres": [
+        "Science Fiction"
+      ]
+    }
+  ]
+}
+
+Books without first:
+{
+  "books": [
+    {
+      "id": 2,
+      "title": "1984",
+      "author": "George Orwell",
+      "year": 1949,
+      "genres": [
+        "Fiction",
+        "Dystopian"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "year": 1813,
+      "genres": [
+        "Fiction",
+        "Romance"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "year": 1937,
+      "genres": [
+        "Fiction",
+        "Fantasy"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "To the Lighthouse",
+      "author": "Virginia Woolf",
+      "year": 1927,
+      "genres": [
+        "Fiction",
+        "Modernist"
+      ]
+    }
+  ]
+}
+
+Found book with title 1984:
+{
+  "id": 2,
+  "title": "1984",
+  "author": "George Orwell",
+  "year": 1949,
+  "genres": [
+    "Fiction",
+    "Dystopian"
+  ]
+}
+
+Fiction books:
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "year": 1960,
+      "genres": [
+        "Fiction",
+        "Drama"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "1984",
+      "author": "George Orwell",
+      "year": 1949,
+      "genres": [
+        "Fiction",
+        "Dystopian"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "year": 1813,
+      "genres": [
+        "Fiction",
+        "Romance"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "year": 1937,
+      "genres": [
+        "Fiction",
+        "Fantasy"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "To the Lighthouse",
+      "author": "Virginia Woolf",
+      "year": 1927,
+      "genres": [
+        "Fiction",
+        "Modernist"
+      ]
+    }
+  ]
+}
+
+Has Jane Austen book?:
+true
+
+--- Array Transformations ---
+
+All titles:
+[
+  "To Kill a Mockingbird",
+  "1984",
+  "Pride and Prejudice",
+  "The Hobbit",
+  "To the Lighthouse"
+]
+
+Modern books:
+[
+  {
+    "id": 1,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "year": 1960,
+    "genres": [
+      "Fiction",
+      "Drama"
+    ]
+  }
+]
+
+Earliest publication year:
+1813
+
+Books sorted by year:
+{
+  "books": [
+    {
+      "id": 3,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "year": 1813,
+      "genres": [
+        "Fiction",
+        "Romance"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "To the Lighthouse",
+      "author": "Virginia Woolf",
+      "year": 1927,
+      "genres": [
+        "Fiction",
+        "Modernist"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "year": 1937,
+      "genres": [
+        "Fiction",
+        "Fantasy"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "1984",
+      "author": "George Orwell",
+      "year": 1949,
+      "genres": [
+        "Fiction",
+        "Dystopian"
+      ]
+    },
+    {
+      "id": 1,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "year": 1960,
+      "genres": [
+        "Fiction",
+        "Drama"
+      ]
+    }
+  ]
+}
+
+Reversed books:
+{
+  "books": [
+    {
+      "id": 5,
+      "title": "To the Lighthouse",
+      "author": "Virginia Woolf",
+      "year": 1927,
+      "genres": [
+        "Fiction",
+        "Modernist"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "year": 1937,
+      "genres": [
+        "Fiction",
+        "Fantasy"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "year": 1813,
+      "genres": [
+        "Fiction",
+        "Romance"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "1984",
+      "author": "George Orwell",
+      "year": 1949,
+      "genres": [
+        "Fiction",
+        "Dystopian"
+      ]
+    },
+    {
+      "id": 1,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "year": 1960,
+      "genres": [
+        "Fiction",
+        "Drama"
+      ]
+    }
+  ]
+}
+
+--- Advanced Array Operations ---
+
+All genres (flattened):
+[
+  "Fiction",
+  "Drama",
+  "Dystopian",
+  "Romance",
+  "Fantasy",
+  "Modernist"
+]
+
+Authors and their books:
+[
+  [
+    "Harper Lee",
+    "To Kill a Mockingbird"
+  ],
+  [
+    "George Orwell",
+    "1984"
+  ],
+  [
+    "Jane Austen",
+    "Pride and Prejudice"
+  ],
+  [
+    "J.R.R. Tolkien",
+    "The Hobbit"
+  ],
+  [
+    "Virginia Woolf",
+    "To the Lighthouse"
+  ]
+]
+
+All books are fiction:
+true
+
+All books have titles:
+true
+
+Genre counts:
+{
+  "Fiction": 5,
+  "Drama": 1,
+  "Dystopian": 1,
+  "Romance": 1,
+  "Fantasy": 1,
+  "Modernist": 1
+}
+
+--- Object Operations ---
+
+Book:
+{
+  "id": 1,
+  "title": "To Kill a Mockingbird",
+  "author": "Harper Lee",
+  "year": 1960,
+  "genres": [
+    "Fiction",
+    "Drama"
+  ]
+}
+
+Book properties:
+[
+  "id",
+  "title",
+  "author",
+  "year",
+  "genres"
+]
+
+Book values:
+[
+  1,
+  "To Kill a Mockingbird",
+  "Harper Lee",
+  1960,
+  [
+    "Fiction",
+    "Drama"
+  ]
+]
+
+Book entries:
+[
+  [
+    "id",
+    1
+  ],
+  [
+    "title",
+    "To Kill a Mockingbird"
+  ],
+  [
+    "author",
+    "Harper Lee"
+  ],
+  [
+    "year",
+    1960
+  ],
+  [
+    "genres",
+    [
+      "Fiction",
+      "Drama"
+    ]
+  ]
+]
+
+Cloned book:
+{
+  "id": 1,
+  "title": "To Kill a Mockingbird",
+  "author": "Harper Lee",
+  "year": 1960,
+  "genres": [
+    "Fiction",
+    "Drama"
+  ]
+}
+
+Book with changed year:
+{
+  "id": 6,
+  "title": "Dune",
+  "author": "Frank Herbert",
+  "year": 1965,
+  "genres": [
+    "Science Fiction"
+  ]
+}
+
+--- Destructuring ---
+
+Book info:
+To Kill a Mockingbird was written by Harper Lee in 1960.
+
+Book info and rest:
+To Kill a Mockingbird was written by Harper Lee in 1960. Other properties... id: 1, genres: Fiction,Drama
+
+First book:
+{
+  "id": 1,
+  "title": "To Kill a Mockingbird",
+  "author": "Harper Lee",
+  "year": 1960,
+  "genres": [
+    "Fiction",
+    "Drama"
+  ]
+}
+
+Second book:
+{
+  "id": 2,
+  "title": "1984",
+  "author": "George Orwell",
+  "year": 1949,
+  "genres": [
+    "Fiction",
+    "Dystopian"
+  ]
+}
+
+Rest of the books:
+[
+  {
+    "id": 3,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "year": 1813,
+    "genres": [
+      "Fiction",
+      "Romance"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "year": 1937,
+    "genres": [
+      "Fiction",
+      "Fantasy"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "To the Lighthouse",
+    "author": "Virginia Woolf",
+    "year": 1927,
+    "genres": [
+      "Fiction",
+      "Modernist"
+    ]
+  }
+]
+
+Primary genre of the first book:
+Fiction
+
